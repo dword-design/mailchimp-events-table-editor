@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="de">
+	<head>
+		<title>Events Table Editor</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- bower:css -->
+        <link rel="stylesheet" href="../bower_components/prism/themes/prism.css" />
+        <!-- endbower -->
+
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+
+	<body>
+		<script type="template" id="template-row">
+			<tr>
+                <td class="data-cell date-cell"></td>
+                <td class="data-cell"></td>
+                <td class="action-cell">
+                    <a class="button-delete"></a>
+                </td>
+            </tr>
+		</script>
+
+        <script type="template" id="template-input-form">
+            <form>
+                <input type="text" value="<%= value %>">
+            </form>
+        </script>
+
+        <h1>Events Table Editor</h1>
+		<table class="events-table">
+			<thead>
+			    <th>Datum</th>
+                <th>Veranstaltung</th>
+			</thead>
+            <tbody>
+            </tbody>
+		</table>
+
+        <a class="button-add-row">Zeile hinzufügen</a>
+
+        <pre class="code-wrapper"><code class="language-html"></code></pre>
+
+		<script src="js/script.js"></script>
+	</body>
+</html>

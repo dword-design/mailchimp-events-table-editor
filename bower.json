@@ -1,0 +1,40 @@
+{
+  "name": "table-editor",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Sebastian Landwehr <info@dword-design.de>"
+  ],
+  "license": "ISC",
+  "homepage": "http://www.dword-design.de",
+  "dependencies": {
+    "reset-css": "^2.2.0",
+    "components-font-awesome": "^4.7.0",
+    "jquery": "^3.2.1",
+    "underscore": "^1.8.3",
+    "prism": "prismjs#^1.8.3"
+  },
+  "overrides": {
+    "jquery": {
+      "main": [
+        "dist/jquery.js"
+      ]
+    },
+    "components-font-awesome": {
+      "main": [
+        "scss/font-awesome.scss"
+      ]
+    },
+    "reset-css": {
+      "main": [
+        "_reset.scss"
+      ]
+    },
+    "prism": {
+      "main": [
+        "prism.js",
+        "themes/prism.css"
+      ]
+    }
+  }
+}

@@ -1,0 +1,5 @@
+.idea
+bower_components
+node_modules
+web/css/style.css
+web/js/script.js
