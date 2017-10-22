@@ -19,7 +19,7 @@ gulp.task('sass', function () {
 });
 
 gulp.task('js', function () {
-    var jsPaths = mainBowerFiles({ filter: '**/*.js' }).concat([ 'js/**/*.js' ]);
+    var jsPaths = mainBowerFiles({ paths: 'web', filter: '**/*.js' }).concat([ 'js/**/*.js' ]);
 
     return gulp.src(jsPaths)
         .pipe(concat('script.js'))
@@ -31,7 +31,7 @@ gulp.task('js', function () {
 // https://github.com/taptapship/wiredep
 gulp.task('wiredep', function() {
 
-    wiredep({ src: ['web/index.html', 'scss/style.scss'] });
+    wiredep({ cwd: 'web', src: ['web/index.html', 'scss/style.scss'] });
 });
 
 gulp.task('compile', ['wiredep', 'sass', 'js']);
