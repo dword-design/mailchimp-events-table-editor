@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "postinstall": "bower install --config.cwd=web --allow-root; npm run build",
+    "build": "gulp compile",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
