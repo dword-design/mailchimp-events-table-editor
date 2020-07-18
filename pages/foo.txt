@@ -1,0 +1,6 @@
+/*<script type="template" id="template-row">
+      <script type="template" id="template-input-form">
+        <form>
+          <input type="text" value="<%= value %>" />
+        </form>
+      </script>*/

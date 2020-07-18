@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+}
+
+button {
+  border: none;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+.contaner {
+  max-width: 1024px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.section {
+  padding: 2rem 1rem;
+}
+
+h1 {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+}
+
+.stack > :not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.data-table {
+  border-collapse: collapse;
+
+  thead {
+    font-weight: bold;
+
+    th {
+      padding-bottom: 1rem;
+      padding-left: 1rem;
+      text-align: left;
+    }
+  }
+
+  td {
+    &.data-cell {
+      border: 1px solid #aaa;
+
+      input {
+        width: 100%;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        font-size: 1rem;
+        line-height: 4rem;
+        border: none;
+      }
+    }
+
+    &.action-cell {
+      width: 1px;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    &.date-cell {
+      width: 8rem;
+    }
+  }
+}
+
+pre {
+  border: 1px solid #aaa;
+  cursor: pointer;
+}
