@@ -3,7 +3,6 @@ import getPackageName from 'get-package-name'
 import P from 'path'
 
 export default function () {
-  this.addModule(getPackageName(require.resolve('@dword-design/nuxt-icon')))
   this.addModule(require.resolve('@/modules/prism'))
   this.options.css.push(
     getPackageName(require.resolve('reset-css')),

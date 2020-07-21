@@ -15,7 +15,7 @@ export default {
       type="button"
     >
       {context.props.icon && (
-        <vue-icon
+        <ui-icon
           class={[
             context.$style.icon,
             { [context.$style.hasSlot]: !!context.scopedSlots.default?.() },
