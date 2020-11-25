@@ -28,7 +28,7 @@
     "@dword-design/nuxt-push-plugins": "^1.0.2",
     "@dword-design/vue-icon": "^1.0.1",
     "@fortawesome/fontawesome-free": "^5.14.0",
-    "get-package-name": "^1.1.0",
+    "get-package-name": "^2.0.0",
     "prismjs": "^1.20.0",
     "reset-css": "^5.0.1",
     "vue": "^2.6.11",
