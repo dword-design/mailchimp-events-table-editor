@@ -1,11 +1,11 @@
 import pushPlugins from '@dword-design/nuxt-push-plugins'
-import getPackageName from 'get-package-name'
+import packageName from 'depcheck-package-name'
 import P from 'path'
 
 export default function () {
   this.addModule(require.resolve('@/modules/prism'))
   this.options.css.push(
-    getPackageName(require.resolve('reset-css')),
+    packageName`reset-css`,
     require.resolve('./style.scss')
   )
   this.addTemplate({
