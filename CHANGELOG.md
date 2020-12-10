@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/dword-design/mailchimp-events-table-editor/compare/v1.0.1...v1.0.2) (2020-12-10)
+
+
+### Bug Fixes
+
+* replace get-package-name with depcheck-package-name ([97cea99](https://github.com/dword-design/mailchimp-events-table-editor/commit/97cea99aa89afe92692774a4a1a403f9d987474e))
+
 ## [1.0.1](https://github.com/dword-design/mailchimp-events-table-editor/compare/v1.0.0...v1.0.1) (2020-07-21)
 
 
