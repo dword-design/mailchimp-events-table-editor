@@ -13,7 +13,7 @@ export default tester(
       await this.page.goto('http://localhost:3000')
       const button = await this.page.waitForSelector('table + button')
       await button.evaluate(el => el.click())
-      const screenshot = await this.page.screenshot({ fullPage: true })
+      const screenshot = await this.page.screenshot({ path: 'add-row-diff.png', fullPage: true })
       expect(screenshot).toMatchImage(
         P.join(__dirname, '-fixtures', 'add-row.png')
       )
@@ -24,7 +24,7 @@ export default tester(
         'table tbody tr:first-child button'
       )
       await button.evaluate(el => el.click())
-      const screenshot = await this.page.screenshot({ fullPage: true })
+      const screenshot = await this.page.screenshot({ path: 'delete-row-diff.png', fullPage: true })
       expect(screenshot).toMatchImage(
         P.join(__dirname, '-fixtures', 'delete-row.png')
       )
@@ -35,14 +35,14 @@ export default tester(
         'table tbody tr:first-child td:first-child input'
       )
       await dateInput.evaluate(el => el.focus())
-      const screenshot = await this.page.screenshot({ fullPage: true })
+      const screenshot = await this.page.screenshot({ path: 'focus-input-diff.png', fullPage: true })
       expect(screenshot).toMatchImage(
         P.join(__dirname, '-fixtures', 'focus-input.png')
       )
     },
     async init() {
       await this.page.goto('http://localhost:3000')
-      const screenshot = await this.page.screenshot({ fullPage: true })
+      const screenshot = await this.page.screenshot({ path: 'init-diff.png', fullPage: true })
       expect(screenshot).toMatchImage(
         P.join(__dirname, '-fixtures', 'init.png')
       )
@@ -57,7 +57,7 @@ export default tester(
         'table tbody tr:first-child td:nth-child(2) input'
       )
       await eventInput.evaluate(el => (el.value = 'Foo Bar'))
-      const screenshot = await this.page.screenshot({ fullPage: true })
+      const screenshot = await this.page.screenshot({ path: 'input-data-diff.png', fullPage: true })
       expect(screenshot).toMatchImage(
         P.join(__dirname, '-fixtures', 'input-data.png')
       )
