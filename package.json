@@ -43,8 +43,7 @@
     "@dword-design/tester-plugin-nuxt": "^1.0.1",
     "@dword-design/tester-plugin-puppeteer": "^1.0.1",
     "jest-image-matcher": "^1.0.0",
-    "nuxt": "~2.14.0",
-    "terminal-image": "^1.2.1"
+    "nuxt": "~2.14.0"
   },
   "publishConfig": {
     "access": "public"

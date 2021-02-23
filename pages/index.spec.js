@@ -4,7 +4,6 @@ import testerPluginNuxt from '@dword-design/tester-plugin-nuxt'
 import testerPluginPuppeteer from '@dword-design/tester-plugin-puppeteer'
 import { toMatchImage } from 'jest-image-matcher'
 import P from 'path'
-import terminalImage from 'terminal-image'
 
 expect.extend({ toMatchImage })
 
