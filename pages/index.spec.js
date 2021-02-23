@@ -16,7 +16,7 @@ export default tester(
       const screenshot = await this.page.screenshot({ fullPage: true })
       expect(screenshot).toMatchImage(
         P.join(__dirname, '-fixtures', 'add-row.png'),
-        { outputDiffBase64: true }
+        { dumpDiffToConsole: true }
       )
     },
     'delete row': async function () {
@@ -30,7 +30,7 @@ export default tester(
       })
       expect(screenshot).toMatchImage(
         P.join(__dirname, '-fixtures', 'delete-row.png'),
-        { outputDiffBase64: true }
+        { dumpDiffToConsole: true }
       )
     },
     'focus input': async function () {
@@ -44,7 +44,7 @@ export default tester(
       })
       expect(screenshot).toMatchImage(
         P.join(__dirname, '-fixtures', 'focus-input.png'),
-        { outputDiffBase64: true }
+        { dumpDiffToConsole: true }
       )
     },
     async init() {
@@ -54,7 +54,7 @@ export default tester(
       })
       expect(screenshot).toMatchImage(
         P.join(__dirname, '-fixtures', 'init.png'),
-        { outputDiffBase64: true }
+        { dumpDiffToConsole: true }
       )
     },
     'input data': async function () {
@@ -72,7 +72,7 @@ export default tester(
       })
       expect(screenshot).toMatchImage(
         P.join(__dirname, '-fixtures', 'input-data.png'),
-        { outputDiffBase64: true }
+        { dumpDiffToConsole: true }
       )
     },
   },
