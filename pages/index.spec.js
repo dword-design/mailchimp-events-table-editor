@@ -4,6 +4,7 @@ import testerPluginNuxt from '@dword-design/tester-plugin-nuxt'
 import testerPluginPuppeteer from '@dword-design/tester-plugin-puppeteer'
 import { toMatchImage } from 'jest-image-matcher'
 import P from 'path'
+import terminalImage from 'terminal-image'
 
 expect.extend({ toMatchImage })
 
@@ -16,7 +17,7 @@ export default tester(
       const screenshot = await this.page.screenshot({ fullPage: true })
       expect(screenshot).toMatchImage(
         P.join(__dirname, '-fixtures', 'add-row.png'),
-        { diffPath: P.join(__dirname, '-diffs', 'add-row.png') }
+        { outputDiffBase64: true }
       )
     },
     'delete row': async function () {
@@ -30,7 +31,7 @@ export default tester(
       })
       expect(screenshot).toMatchImage(
         P.join(__dirname, '-fixtures', 'delete-row.png'),
-        { diffPath: P.join(__dirname, '-diffs', 'delete-row.png') }
+        { outputDiffBase64: true }
       )
     },
     'focus input': async function () {
@@ -44,7 +45,7 @@ export default tester(
       })
       expect(screenshot).toMatchImage(
         P.join(__dirname, '-fixtures', 'focus-input.png'),
-        { diffPath: P.join(__dirname, '-diffs', 'focus-input.png') }
+        { outputDiffBase64: true }
       )
     },
     async init() {
@@ -54,7 +55,7 @@ export default tester(
       })
       expect(screenshot).toMatchImage(
         P.join(__dirname, '-fixtures', 'init.png'),
-        { diffPath: P.join(__dirname, '-diffs', 'init.png') }
+        { outputDiffBase64: true }
       )
     },
     'input data': async function () {
@@ -72,7 +73,7 @@ export default tester(
       })
       expect(screenshot).toMatchImage(
         P.join(__dirname, '-fixtures', 'input-data.png'),
-        { diffPath: P.join(__dirname, '-diffs', 'input-data.png') }
+        { outputDiffBase64: true }
       )
     },
   },
