@@ -8741,9 +8741,9 @@ jest-get-type@^26.3.0:
   integrity sha512-TpfaviN1R2pQWkIihlfEanwOXK0zcxrKEE4MlU6Tn7keoXdN6/3gK/xl0yEh8DOunn5pOVGKf8hB4R9gVh04ig==
 
 jest-image-matcher@^1.0.0:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/jest-image-matcher/-/jest-image-matcher-1.2.1.tgz#3ea4ad00c1df9c4e7e4267a0c2a76d98248c266d"
-  integrity sha512-urPb5fbfY9/4aN39g5Vw6BAfN1o8jAQpBIZqUHhWWp7xbLYVtAWw3wEC/EpN9yHsOY11rdJ2+FWiOy5RGBDtAw==
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/jest-image-matcher/-/jest-image-matcher-1.3.0.tgz#4f88225225e84e0141590b4cdc904e32fea34862"
+  integrity sha512-9BmbX4gXohLsSEUFPREr7thKM3ho7VvxdaPd1Og5i1hPUB2X+/TELMKTxiSkArjrYRPXPhJ8mtWGpaO4NctANA==
   dependencies:
     "@dword-design/functions" "^1.2.0"
     fs-extra "^9.1.0"
