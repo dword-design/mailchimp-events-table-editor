@@ -36,7 +36,14 @@
   },
   "devDependencies": {
     "@dword-design/base": "^7.0.0",
-    "@dword-design/base-config-app": "^1.5.7"
+    "@dword-design/base-config-app": "^1.5.7",
+    "@dword-design/base-config-nuxt": "^2.20.3",
+    "@dword-design/puppeteer": "^2.0.0",
+    "@dword-design/tester": "^1.1.1",
+    "@dword-design/tester-plugin-nuxt": "^1.0.1",
+    "@dword-design/tester-plugin-puppeteer": "^1.0.1",
+    "jest-image-matcher": "^1.0.0",
+    "nuxt": "~2.14.0"
   },
   "publishConfig": {
     "access": "public"

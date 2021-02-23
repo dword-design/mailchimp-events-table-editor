@@ -3,7 +3,7 @@ import packageName from 'depcheck-package-name'
 import P from 'path'
 
 export default function () {
-  this.addModule(require.resolve('@/modules/prism'))
+  this.addModule(require.resolve('../prism'))
   this.options.css.push(packageName`reset-css`, require.resolve('./style.scss'))
   this.addTemplate({
     fileName: P.join('theme', 'button.vue'),
