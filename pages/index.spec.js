@@ -14,6 +14,7 @@ export default tester(
       const button = await this.page.waitForSelector('table + button')
       await button.evaluate(el => el.click())
       const screenshot = await this.page.screenshot({ fullPage: true })
+      console.log(`data:image/png;base64,${screenshot.toString('base64')}`)
       expect(screenshot).toMatchImage(
         P.join(__dirname, '-fixtures', 'add-row.png'),
         { dumpDiffToConsole: true }
