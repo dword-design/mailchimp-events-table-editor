@@ -6,4 +6,4 @@ RUN sudo apt-get install git-lfs
 RUN git lfs install
 
 # Puppeteer dependencies
-RUN sudo apt-get update && sudo apt-get install -y libgtk-3-0 libx11-xcb1 libnss3 libxss1 libasound2 libgbm1 libxshmfence
+RUN sudo apt-get update && sudo apt-get install -y libgtk-3-0 libx11-xcb1 libnss3 libxss1 libasound2 libgbm1 libxshmfence1
