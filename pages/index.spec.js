@@ -13,8 +13,10 @@ export default tester(
       await this.page.goto('http://localhost:3000')
       const button = await this.page.waitForSelector('table + button')
       await button.evaluate(el => el.click())
-      const screenshot = await this.page.screenshot({ fullPage: true })
-      console.log(`data:image/png;base64,${screenshot.toString('base64')}`)
+      const screenshot = await this.page.screenshot({
+        fullPage: true,
+        // path: P.join(__dirname, '-fixtures', 'add-row.png'),
+      })
       expect(screenshot).toMatchImage(
         P.join(__dirname, '-fixtures', 'add-row.png'),
         { dumpDiffToConsole: true }
@@ -28,6 +30,7 @@ export default tester(
       await button.evaluate(el => el.click())
       const screenshot = await this.page.screenshot({
         fullPage: true,
+        // path: P.join(__dirname, '-fixtures', 'delete-row.png'),
       })
       expect(screenshot).toMatchImage(
         P.join(__dirname, '-fixtures', 'delete-row.png'),
@@ -42,6 +45,7 @@ export default tester(
       await dateInput.evaluate(el => el.focus())
       const screenshot = await this.page.screenshot({
         fullPage: true,
+        // path: P.join(__dirname, '-fixtures', 'focus-input.png'),
       })
       expect(screenshot).toMatchImage(
         P.join(__dirname, '-fixtures', 'focus-input.png'),
@@ -52,6 +56,7 @@ export default tester(
       await this.page.goto('http://localhost:3000')
       const screenshot = await this.page.screenshot({
         fullPage: true,
+        // path: P.join(__dirname, '-fixtures', 'init.png'),
       })
       expect(screenshot).toMatchImage(
         P.join(__dirname, '-fixtures', 'init.png'),
@@ -70,6 +75,7 @@ export default tester(
       await eventInput.evaluate(el => (el.value = 'Foo Bar'))
       const screenshot = await this.page.screenshot({
         fullPage: true,
+        // path: P.join(__dirname, '-fixtures', 'input-data.png'),
       })
       expect(screenshot).toMatchImage(
         P.join(__dirname, '-fixtures', 'input-data.png'),

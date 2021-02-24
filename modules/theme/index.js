@@ -4,7 +4,11 @@ import P from 'path'
 
 export default function () {
   this.addModule(require.resolve('../prism'))
-  this.options.css.push(packageName`reset-css`, packageName`@fontsource/open-sans`, require.resolve('./style.scss'))
+  this.options.css.push(
+    packageName`reset-css`,
+    packageName`@fontsource/open-sans`,
+    require.resolve('./style.scss')
+  )
   this.addTemplate({
     fileName: P.join('theme', 'button.vue'),
     src: require.resolve('./button.vue'),
