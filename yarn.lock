@@ -1572,6 +1572,11 @@
   resolved "https://registry.yarnpkg.com/@dword-design/tester-plugin-nuxt/-/tester-plugin-nuxt-1.0.1.tgz#a3f17b321483e08c5e27e7528490ed0184fe8b7c"
   integrity sha512-WjJ/wA1wRshsutEmd9RN7/Jc1UmMFSQ1ck6BLlziCeCwFu1pnVsFsVMDjslflay/kRt0kJ/NmRT7lASrzqEhdg==
 
+"@dword-design/tester-plugin-puppeteer@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@dword-design/tester-plugin-puppeteer/-/tester-plugin-puppeteer-1.0.1.tgz#9e68a54e9d0290dec73845b9514188676d8ac6cc"
+  integrity sha512-nSIXMmGHBXBhyrYGSXl93YiS7RG6shwTPUZvs/X2LxZu/dp9dQmO8lcQe9uXWW7wXePkvnA16Zneiv8asPMQ4g==
+
 "@dword-design/tester@^1.1.1":
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/@dword-design/tester/-/tester-1.1.1.tgz#e83835fbf322afac9aebd8a2822a09a48ce06a7f"

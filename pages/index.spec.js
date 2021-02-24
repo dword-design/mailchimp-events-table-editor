@@ -1,7 +1,7 @@
 import nuxtConfig from '@dword-design/base-config-nuxt/dist/nuxt.config'
-import puppeteer from '@dword-design/puppeteer'
 import tester from '@dword-design/tester'
 import testerPluginNuxt from '@dword-design/tester-plugin-nuxt'
+import testerPluginPuppeteer from '@dword-design/tester-plugin-puppeteer'
 import { toMatchImage } from 'jest-image-matcher'
 import P from 'path'
 
@@ -76,18 +76,5 @@ export default tester(
       )
     },
   },
-  [
-    testerPluginNuxt(nuxtConfig),
-    {
-      after() {
-        return this.browser.close()
-      },
-      async before() {
-        this.browser = await puppeteer.launch({
-          args: ['--enable-font-antialiasing'],
-        })
-        this.page = await this.browser.newPage()
-      },
-    },
-  ]
+  [testerPluginNuxt(nuxtConfig), testerPluginPuppeteer()]
 )
