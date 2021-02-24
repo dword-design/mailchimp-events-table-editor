@@ -84,8 +84,7 @@ export default tester(
       },
       async before() {
         this.browser = await puppeteer.launch({
-          args: ['--font-render-hinting=none'],
-          headless: true,
+          args: ['--enable-font-antialiasing'],
         })
         this.page = await this.browser.newPage()
       },
