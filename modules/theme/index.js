@@ -6,7 +6,7 @@ export default function () {
   this.addModule(require.resolve('../prism'))
   this.options.css.push(
     packageName`reset-css`,
-    packageName`@fontsource/stick`,
+    packageName`@fontsource/open-sans`,
     require.resolve('./style.scss')
   )
   this.addTemplate({
