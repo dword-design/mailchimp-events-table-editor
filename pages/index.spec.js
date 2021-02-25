@@ -4,6 +4,7 @@ import testerPluginNuxt from '@dword-design/tester-plugin-nuxt'
 import testerPluginPuppeteer from '@dword-design/tester-plugin-puppeteer'
 import { toMatchImage } from 'jest-image-matcher'
 import P from 'path'
+import { PNG } from 'pngjs'
 
 expect.extend({ toMatchImage })
 
@@ -15,9 +16,13 @@ export default tester(
       await button.evaluate(el => el.click())
       const screenshot = await this.page.screenshot({
         fullPage: true,
-        // path: P.join(__dirname, '-fixtures', 'delete-row.png'),
+        // path: P.join(__dirname, '-fixtures', 'add-row.png'),
       })
-      console.log(`data:image/png;base64,${screenshot.toString('base64')}`)
+      console.log(
+        `data:image/png;base64,${PNG.sync
+          .write(PNG.sync.read(screenshot), { filterType: 4 })
+          .toString('base64')}`
+      )
       expect(screenshot).toMatchImage(
         P.join(__dirname, '-fixtures', 'add-row.png'),
         { dumpDiffToConsole: true }
