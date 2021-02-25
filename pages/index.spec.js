@@ -15,8 +15,9 @@ export default tester(
       await button.evaluate(el => el.click())
       const screenshot = await this.page.screenshot({
         fullPage: true,
-        // path: P.join(__dirname, '-fixtures', 'add-row.png'),
+        // path: P.join(__dirname, '-fixtures', 'delete-row.png'),
       })
+      console.log(`data:image/png;base64,${screenshot.toString('base64')}`)
       expect(screenshot).toMatchImage(
         P.join(__dirname, '-fixtures', 'add-row.png'),
         { dumpDiffToConsole: true }
