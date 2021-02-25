@@ -13,27 +13,13 @@ export default tester(
       await this.page.goto('http://localhost:3000')
       const button = await this.page.waitForSelector('table + button')
       await button.evaluate(el => el.click())
-      await this.page._client.send('DOM.enable')
-      await this.page._client.send('CSS.enable')
-      const doc = await this.page._client.send('DOM.getDocument')
-      const node = await this.page._client.send('DOM.querySelector', {
-        nodeId: doc.root.nodeId,
-        selector: '.language-html',
-      })
-      const fonts = await this.page._client.send(
-        'CSS.getPlatformFontsForNode',
-        {
-          nodeId: node.nodeId,
-        }
-      )
-      console.log(fonts)
       const screenshot = await this.page.screenshot({
         fullPage: true,
         // path: P.join(__dirname, '-fixtures', 'add-row.png'),
       })
       expect(screenshot).toMatchImage(
-        P.join(__dirname, '-fixtures', 'add-row.png')
-        // { dumpDiffToConsole: true }
+        P.join(__dirname, '-fixtures', 'add-row.png'),
+        { dumpDiffToConsole: true }
       )
     },
     'delete row': async function () {
