@@ -4,13 +4,18 @@
 
 button {
   border: none;
+  font-family: inherit;
+}
+
+input {
+  font-family: inherit;
 }
 
 body {
-  font-family: Helvetica, sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
-.contaner {
+.container {
   max-width: 1024px;
   margin-right: auto;
   margin-left: auto;
