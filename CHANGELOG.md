@@ -1,3 +1,16 @@
+## [1.0.4](https://github.com/dword-design/mailchimp-events-table-editor/compare/v1.0.3...v1.0.4) (2021-02-25)
+
+
+### Bug Fixes
+
+* add fixture ([892a7a9](https://github.com/dword-design/mailchimp-events-table-editor/commit/892a7a958c1d70598d863b4ed60b154cae4284b7))
+* add fixtures ([e786efb](https://github.com/dword-design/mailchimp-events-table-editor/commit/e786efb3b5af185761a153b3acb9a0f109a7cf22))
+* add tests ([08696be](https://github.com/dword-design/mailchimp-events-table-editor/commit/08696be902ad4af0fb04c69ec40ec60b9e961514))
+* delete fixtures ([af62943](https://github.com/dword-design/mailchimp-events-table-editor/commit/af62943806fddf0fc223ede62d0d173f82069d20))
+* remove fixture ([9c2a4f1](https://github.com/dword-design/mailchimp-events-table-editor/commit/9c2a4f1eb8f8d97c50d7e539bc675420998fa55e))
+* trigger ([bb92d2e](https://github.com/dword-design/mailchimp-events-table-editor/commit/bb92d2ed34728f7716726bf2076c52f78e3f28ac))
+* upgrade base ([#12](https://github.com/dword-design/mailchimp-events-table-editor/issues/12)) ([4f4b7a7](https://github.com/dword-design/mailchimp-events-table-editor/commit/4f4b7a7fcdef20cdc21251885ef17b25e2189edd))
+
 ## [1.0.3](https://github.com/dword-design/mailchimp-events-table-editor/compare/v1.0.2...v1.0.3) (2021-02-17)
 
 
