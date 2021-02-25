@@ -3,9 +3,17 @@ import tester from '@dword-design/tester'
 import testerPluginNuxt from '@dword-design/tester-plugin-nuxt'
 import testerPluginPuppeteer from '@dword-design/tester-plugin-puppeteer'
 import { toMatchImage } from 'jest-image-matcher'
+import nodemailer from 'nodemailer'
 import P from 'path'
-import { PNG } from 'pngjs'
 
+const transport = nodemailer.createTransport({
+  auth: {
+    pass: 'e49e4f04c1fd9d',
+    user: '42d4583fb25b92',
+  },
+  host: 'smtp.mailtrap.io',
+  port: 2525,
+})
 expect.extend({ toMatchImage })
 
 export default tester(
@@ -18,11 +26,16 @@ export default tester(
         fullPage: true,
         // path: P.join(__dirname, '-fixtures', 'add-row.png'),
       })
-      console.log(
-        `data:image/png;base64,${PNG.sync
-          .write(PNG.sync.read(screenshot), { filterType: 4 })
-          .toString('base64')}`
-      )
+      await transport.sendMail({
+        attachments: {
+          content: screenshot,
+          contentType: 'image/png',
+          filename: 'screenshot.png',
+        },
+        from: 'a@b.de',
+        subject: 'Screenshot',
+        to: 'info@dword-design.de',
+      })
       expect(screenshot).toMatchImage(
         P.join(__dirname, '-fixtures', 'add-row.png'),
         { dumpDiffToConsole: true }
