@@ -1380,10 +1380,10 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@fontsource/open-sans@^4.2.1":
+"@fontsource/stick@^4.2.1":
   version "4.2.1"
-  resolved "https://registry.yarnpkg.com/@fontsource/open-sans/-/open-sans-4.2.1.tgz#5c8763a91eb2d0e1a3a4ef61eca3743e4224e9e3"
-  integrity sha512-CfvS4yIrZxBA9FoITkceFUM3HS9MYty8qZJ/Jq1m4NRqQlJX7Jc8KV4k/APG1h16jdp9ilU6VmZbdLwPxXr7Yw==
+  resolved "https://registry.yarnpkg.com/@fontsource/stick/-/stick-4.2.1.tgz#e75e3baa060a951f9c243373502ec64f0c934508"
+  integrity sha512-VngHubyCtaWwAvG9qCKfSMaiTC9uzQaR5jP0jhmzjjRicNkR2dJU/sxeuEz5XOIKpCg3K9gEXh5l7mMFkoMMfA==
 
 "@fortawesome/fontawesome-free@^5.14.0":
   version "5.15.2"
