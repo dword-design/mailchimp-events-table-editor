@@ -44,7 +44,6 @@
     "@dword-design/tester-plugin-nuxt": "^1.0.1",
     "@dword-design/tester-plugin-puppeteer": "^1.0.1",
     "jest-image-matcher": "^1.0.0",
-    "nodemailer": "^6.4.18",
     "nuxt": "~2.14.0"
   },
   "publishConfig": {
