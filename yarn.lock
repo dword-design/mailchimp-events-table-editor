@@ -1380,6 +1380,11 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
+"@fontsource/source-code-pro@^4.2.1":
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/@fontsource/source-code-pro/-/source-code-pro-4.2.1.tgz#70e3a20341bdc1d0ca50690eecd3be41b5ae0a89"
+  integrity sha512-yr0OX9y0YwT7p8xoaoppcnx6Euab6eeHimc5PVl6m7QisjS/KYz+DfXjgp6ML25U1IUpwgJiKq+eLs3q26BAMQ==
+
 "@fontsource/stick@^4.2.1":
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/@fontsource/stick/-/stick-4.2.1.tgz#e75e3baa060a951f9c243373502ec64f0c934508"
