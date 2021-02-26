@@ -21,7 +21,8 @@
     "push": "base push",
     "setupDeploy": "base setupDeploy",
     "start": "base start",
-    "test": "base test"
+    "test": "base test",
+    "test:raw": "base test:raw"
   },
   "dependencies": {
     "@dword-design/functions": "^1.1.3",
@@ -50,5 +51,8 @@
   "publishConfig": {
     "access": "public"
   },
-  "baseConfig": "@dword-design/app"
+  "baseConfig": {
+    "name": "@dword-design/app",
+    "testInContainer": true
+  }
 }
