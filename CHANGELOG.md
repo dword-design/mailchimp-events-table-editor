@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/dword-design/mailchimp-events-table-editor/compare/v1.0.4...v1.0.5) (2021-02-26)
+
+
+### Bug Fixes
+
+* upgrades ([b76d990](https://github.com/dword-design/mailchimp-events-table-editor/commit/b76d990d103c3586a230e085fd5d53cb0b39804b))
+
 ## [1.0.4](https://github.com/dword-design/mailchimp-events-table-editor/compare/v1.0.3...v1.0.4) (2021-02-25)
 
 
