@@ -2,10 +2,6 @@ import nuxtConfig from '@dword-design/base-config-nuxt/dist/nuxt.config'
 import tester from '@dword-design/tester'
 import testerPluginNuxt from '@dword-design/tester-plugin-nuxt'
 import testerPluginPuppeteer from '@dword-design/tester-plugin-puppeteer'
-import { toMatchImage } from 'jest-image-matcher'
-import P from 'path'
-
-expect.extend({ toMatchImage })
 
 export default tester(
   {
@@ -13,14 +9,8 @@ export default tester(
       await this.page.goto('http://localhost:3000')
       const button = await this.page.waitForSelector('table + button')
       await button.evaluate(el => el.click())
-      const screenshot = await this.page.screenshot({
-        fullPage: true,
-        // path: P.join(__dirname, '-fixtures', 'add-row.png'),
-      })
-      expect(screenshot).toMatchImage(
-        P.join(__dirname, '-fixtures', 'add-row.png'),
-        { dumpDiffToConsole: true }
-      )
+      const screenshot = await this.page.screenshot({ fullPage: true })
+      expect(screenshot).toMatchImageSnapshot(this)
     },
     'delete row': async function () {
       await this.page.goto('http://localhost:3000')
@@ -28,14 +18,8 @@ export default tester(
         'table tbody tr:first-child button'
       )
       await button.evaluate(el => el.click())
-      const screenshot = await this.page.screenshot({
-        fullPage: true,
-        // path: P.join(__dirname, '-fixtures', 'delete-row.png'),
-      })
-      expect(screenshot).toMatchImage(
-        P.join(__dirname, '-fixtures', 'delete-row.png'),
-        { dumpDiffToConsole: true }
-      )
+      const screenshot = await this.page.screenshot({ fullPage: true })
+      expect(screenshot).toMatchImageSnapshot(this)
     },
     'focus input': async function () {
       await this.page.goto('http://localhost:3000')
@@ -43,25 +27,13 @@ export default tester(
         'table tbody tr:first-child td:first-child input'
       )
       await dateInput.evaluate(el => el.focus())
-      const screenshot = await this.page.screenshot({
-        fullPage: true,
-        // path: P.join(__dirname, '-fixtures', 'focus-input.png'),
-      })
-      expect(screenshot).toMatchImage(
-        P.join(__dirname, '-fixtures', 'focus-input.png'),
-        { dumpDiffToConsole: true }
-      )
+      const screenshot = await this.page.screenshot({ fullPage: true })
+      expect(screenshot).toMatchImageSnapshot(this)
     },
     async init() {
       await this.page.goto('http://localhost:3000')
-      const screenshot = await this.page.screenshot({
-        fullPage: true,
-        // path: P.join(__dirname, '-fixtures', 'init.png'),
-      })
-      expect(screenshot).toMatchImage(
-        P.join(__dirname, '-fixtures', 'init.png'),
-        { dumpDiffToConsole: true }
-      )
+      const screenshot = await this.page.screenshot({ fullPage: true })
+      expect(screenshot).toMatchImageSnapshot(this)
     },
     'input data': async function () {
       await this.page.goto('http://localhost:3000')
@@ -73,14 +45,8 @@ export default tester(
         'table tbody tr:first-child td:nth-child(2) input'
       )
       await eventInput.evaluate(el => (el.value = 'Foo Bar'))
-      const screenshot = await this.page.screenshot({
-        fullPage: true,
-        // path: P.join(__dirname, '-fixtures', 'input-data.png'),
-      })
-      expect(screenshot).toMatchImage(
-        P.join(__dirname, '-fixtures', 'input-data.png'),
-        { dumpDiffToConsole: true }
-      )
+      const screenshot = await this.page.screenshot({ fullPage: true })
+      expect(screenshot).toMatchImageSnapshot(this)
     },
   },
   [testerPluginNuxt(nuxtConfig), testerPluginPuppeteer()]
