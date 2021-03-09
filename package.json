@@ -45,7 +45,7 @@
     "@dword-design/tester": "^1.1.1",
     "@dword-design/tester-plugin-nuxt": "^1.0.1",
     "@dword-design/tester-plugin-puppeteer": "^1.0.1",
-    "nuxt": "~2.14.0"
+    "nuxt": "~2.15.0"
   },
   "publishConfig": {
     "access": "public"
