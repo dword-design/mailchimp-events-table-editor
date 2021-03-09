@@ -1,3 +1,10 @@
+## [1.0.8](https://github.com/dword-design/mailchimp-events-table-editor/compare/v1.0.7...v1.0.8) (2021-03-09)
+
+
+### Bug Fixes
+
+* update dependency @dword-design/puppeteer to v3 ([b70836e](https://github.com/dword-design/mailchimp-events-table-editor/commit/b70836e0a0b192708f90c1dd930d8c1f46f92e8f))
+
 ## [1.0.7](https://github.com/dword-design/mailchimp-events-table-editor/compare/v1.0.6...v1.0.7) (2021-03-09)
 
 
