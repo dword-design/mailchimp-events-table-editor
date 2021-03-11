@@ -39,7 +39,7 @@
 ## Install
 
 ```bash
-# NPM
+# npm
 $ npm install @dword-design/mailchimp-events-table-editor
 
 # Yarn
