@@ -1,3 +1,11 @@
+## [1.0.9](https://github.com/dword-design/mailchimp-events-table-editor/compare/v1.0.8...v1.0.9) (2021-03-11)
+
+
+### Bug Fixes
+
+* update dependency nuxt to ~2.15.0 ([b2d03db](https://github.com/dword-design/mailchimp-events-table-editor/commit/b2d03dbb9e75009e2f39fb69f1a9c1a1de89895c))
+* upgrades ([f4b02e4](https://github.com/dword-design/mailchimp-events-table-editor/commit/f4b02e48f703062c544b2faf9ab22b77b5df958b))
+
 ## [1.0.8](https://github.com/dword-design/mailchimp-events-table-editor/compare/v1.0.7...v1.0.8) (2021-03-09)
 
 
