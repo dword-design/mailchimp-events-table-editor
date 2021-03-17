@@ -11,7 +11,7 @@
       >
     </a><a href="https://codecov.io/gh/dword-design/mailchimp-events-table-editor">
       <img
-        src="https://codecov.io/gh/dword-design/mailchimp-events-table-editor/branch/master/graph/badge.svg"
+        src="https://codecov.io/gh/dword-design/mailchimp-events-table-editor/branch/master/graph/badge.svg?token=vU2boBzFiF"
         alt="Coverage status"
       >
     </a><a href="https://david-dm.org/dword-design/mailchimp-events-table-editor">
