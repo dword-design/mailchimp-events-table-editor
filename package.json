@@ -53,6 +53,7 @@
   },
   "baseConfig": {
     "name": "@dword-design/app",
-    "testInContainer": true
+    "testInContainer": true,
+    "codecovGraphToken": "vU2boBzFiF"
   }
 }
