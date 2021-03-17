@@ -3,6 +3,7 @@
   "version": "1.0.9",
   "description": "",
   "repository": "dword-design/mailchimp-events-table-editor",
+  "funding": "https://www.buymeacoffee.com/dword",
   "license": "MIT",
   "author": "Sebastian Landwehr <info@dword-design.de>",
   "main": "dist/index.js",
@@ -52,6 +53,7 @@
   },
   "baseConfig": {
     "name": "@dword-design/app",
-    "testInContainer": true
+    "testInContainer": true,
+    "codecovGraphToken": "vU2boBzFiF"
   }
 }
