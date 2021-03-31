@@ -59,7 +59,7 @@ $ yarn add @dword-design/mailchimp-events-table-editor
 <!-- LICENSE/ -->
 ## Contribute
 
-Are you missing something or want to contribute? Feel free to file an [issue](https://github.com/dword-design/mailchimp-events-table-editor/issues) or [pull request](https://github.com/dword-design/mailchimp-events-table-editor/pulls)! ⚙️
+Are you missing something or want to contribute? Feel free to file an [issue](https://github.com/dword-design/mailchimp-events-table-editor/issues) or a [pull request](https://github.com/dword-design/mailchimp-events-table-editor/pulls)! ⚙️
 
 ## Support
 
