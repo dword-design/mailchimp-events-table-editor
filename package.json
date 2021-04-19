@@ -28,7 +28,7 @@
   "dependencies": {
     "@dword-design/functions": "^3.0.0",
     "@dword-design/nuxt-push-plugins": "^1.0.2",
-    "@dword-design/vue-icon": "^1.0.1",
+    "@dword-design/vue-icon": "^1.0.8",
     "@fontsource/open-sans": "^4.2.1",
     "@fontsource/source-code-pro": "^4.2.1",
     "@fortawesome/fontawesome-free": "^5.14.0",
