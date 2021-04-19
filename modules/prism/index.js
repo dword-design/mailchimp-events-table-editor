@@ -1,5 +1,5 @@
-import pushPlugins from '@dword-design/nuxt-push-plugins'
 import packageName from 'depcheck-package-name'
+import nuxtPushPlugins from 'nuxt-push-plugins'
 
 export default function () {
   this.options.css.push(
@@ -7,5 +7,5 @@ export default function () {
     packageName`@fontsource/source-code-pro`,
     require.resolve('./style.scss')
   )
-  pushPlugins(this, require.resolve('./plugin'))
+  nuxtPushPlugins(this, require.resolve('./plugin'))
 }

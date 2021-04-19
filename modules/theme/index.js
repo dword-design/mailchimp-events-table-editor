@@ -1,5 +1,5 @@
-import pushPlugins from '@dword-design/nuxt-push-plugins'
 import packageName from 'depcheck-package-name'
+import nuxtPushPlugins from 'nuxt-push-plugins'
 import P from 'path'
 
 export default function () {
@@ -13,7 +13,7 @@ export default function () {
     fileName: P.join('theme', 'button.vue'),
     src: require.resolve('./button.vue'),
   })
-  pushPlugins(this, {
+  nuxtPushPlugins(this, {
     fileName: P.join('theme', 'plugin.js'),
     src: require.resolve('./plugin'),
   })
