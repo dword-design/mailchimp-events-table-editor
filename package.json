@@ -1,7 +1,7 @@
 {
   "name": "@dword-design/mailchimp-events-table-editor",
   "version": "1.0.17",
-  "description": "",
+  "description": null,
   "repository": "dword-design/mailchimp-events-table-editor",
   "funding": "https://www.buymeacoffee.com/dword",
   "license": "MIT",
@@ -54,5 +54,7 @@
     "name": "@dword-design/app",
     "testInContainer": true,
     "codecovGraphToken": "vU2boBzFiF"
-  }
+  },
+  "homepage": null,
+  "keywords": []
 }
