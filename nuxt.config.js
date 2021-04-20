@@ -1,4 +1,4 @@
 export default {
   modules: ['~/modules/theme'],
-  name: 'Events Table Editor',
+  name: 'Mailchimp Events Table Editor',
 }

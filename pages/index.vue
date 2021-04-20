@@ -11,6 +11,7 @@ import FaPlus from '@fortawesome/fontawesome-free/svgs/solid/plus.svg'
 import FaTrash from '@fortawesome/fontawesome-free/svgs/solid/trash.svg'
 
 import selectAll from '@/model/select-all'
+import config from '@/nuxt.config'
 
 export default {
   computed: {
@@ -40,7 +41,7 @@ export default {
   render() {
     return (
       <div>
-        <h1>Events Table Editor</h1>
+        <h1>{config.name}</h1>
         <section class="section">
           <div class="stack">
             <table class="data-table">
