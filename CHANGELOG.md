@@ -1,3 +1,11 @@
+## [1.0.19](https://github.com/dword-design/mailchimp-events-table-editor/compare/v1.0.18...v1.0.19) (2021-04-21)
+
+
+### Bug Fixes
+
+* update config files ([cb53109](https://github.com/dword-design/mailchimp-events-table-editor/commit/cb53109ee0950268da60598110921b13857891b3))
+* updated package.json[description] ([#40](https://github.com/dword-design/mailchimp-events-table-editor/issues/40)) ([2f6909e](https://github.com/dword-design/mailchimp-events-table-editor/commit/2f6909e65199367045468ea3d39d3b480dc2a1d7))
+
 ## [1.0.18](https://github.com/dword-design/mailchimp-events-table-editor/compare/v1.0.17...v1.0.18) (2021-04-20)
 
 
