@@ -2,8 +2,8 @@ import packageName from 'depcheck-package-name'
 import nuxtPushPlugins from 'nuxt-push-plugins'
 import P from 'path'
 
-export default function () {
-  this.addModule(require.resolve('../prism'))
+export default async function () {
+  await this.addModule(require.resolve('../prism'))
   this.options.css.push(
     packageName`reset-css`,
     packageName`@fontsource/open-sans`,
