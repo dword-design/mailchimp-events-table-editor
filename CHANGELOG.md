@@ -1,3 +1,10 @@
+## [1.0.26](https://github.com/dword-design/mailchimp-events-table-editor/compare/v1.0.25...v1.0.26) (2021-05-03)
+
+
+### Bug Fixes
+
+* update dependency @dword-design/vue-icon to v2 ([#48](https://github.com/dword-design/mailchimp-events-table-editor/issues/48)) ([d649d4f](https://github.com/dword-design/mailchimp-events-table-editor/commit/d649d4f1078b43d55194e3bdc60a88ad6c6f3e8a))
+
 ## [1.0.25](https://github.com/dword-design/mailchimp-events-table-editor/compare/v1.0.24...v1.0.25) (2021-05-03)
 
 
