@@ -1407,10 +1407,10 @@
     "@dword-design/functions" "^3.0.0"
     promise-sequential "^1.1.1"
 
-"@dword-design/vue-icon@^1.0.1":
-  version "1.0.13"
-  resolved "https://registry.yarnpkg.com/@dword-design/vue-icon/-/vue-icon-1.0.13.tgz#e4094a647def49c4546fb377cdd46c30b99cd8d3"
-  integrity sha512-cUalctFZRM/6T1OM/5tcOd5PA2q8s4WJT+OEfde9jntCfIESfm0auo0aC9kqM/XjKcL63mx5hI/cm4D7+Jrxmw==
+"@dword-design/vue-icon@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@dword-design/vue-icon/-/vue-icon-2.0.0.tgz#44399b2580d6dd43f5221c8d78b387fea4bd9e37"
+  integrity sha512-JKj9W+9hadyiFdWU2cwDxRLMizAyXBGlOOJHOZpfmzPH3YviBSNS45c+EmbKcIK+weZfER7GmSOiCocNQw4oqg==
 
 "@eslint/eslintrc@^0.4.0":
   version "0.4.0"
