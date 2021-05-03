@@ -46,6 +46,9 @@
     "@dword-design/tester-plugin-puppeteer": "^2.0.0",
     "nuxt": "~2.15.0"
   },
+  "engines": {
+    "node": ">=12"
+  },
   "publishConfig": {
     "access": "public"
   },
