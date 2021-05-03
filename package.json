@@ -25,7 +25,7 @@
     "test:raw": "base test:raw"
   },
   "dependencies": {
-    "@dword-design/functions": "^3.0.0",
+    "@dword-design/functions": "^4.0.0",
     "@dword-design/vue-icon": "^2.0.0",
     "@fontsource/open-sans": "^4.2.1",
     "@fontsource/source-code-pro": "^4.2.1",
