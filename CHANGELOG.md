@@ -1,3 +1,11 @@
+## [1.0.29](https://github.com/dword-design/mailchimp-events-table-editor/compare/v1.0.28...v1.0.29) (2021-05-04)
+
+
+### Bug Fixes
+
+* update dependency @dword-design/tester-plugin-nuxt to v2 ([#52](https://github.com/dword-design/mailchimp-events-table-editor/issues/52)) ([f5438b3](https://github.com/dword-design/mailchimp-events-table-editor/commit/f5438b341cb5f8092fdcd60a733c21b2c36f7268))
+* update dependency depcheck-package-name to v2 ([#53](https://github.com/dword-design/mailchimp-events-table-editor/issues/53)) ([2938f04](https://github.com/dword-design/mailchimp-events-table-editor/commit/2938f04916bd3087f5c59d4a3be347fe147251fe))
+
 ## [1.0.28](https://github.com/dword-design/mailchimp-events-table-editor/compare/v1.0.27...v1.0.28) (2021-05-04)
 
 
