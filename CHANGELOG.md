@@ -1,3 +1,10 @@
+## [1.0.54](https://github.com/dword-design/mailchimp-events-table-editor/compare/v1.0.53...v1.0.54) (2021-11-22)
+
+
+### Bug Fixes
+
+* lock file maintenance ([1d21c55](https://github.com/dword-design/mailchimp-events-table-editor/commit/1d21c55adfdfcb642daab44e36b9bbb3a082707e))
+
 ## [1.0.53](https://github.com/dword-design/mailchimp-events-table-editor/compare/v1.0.52...v1.0.53) (2021-11-15)
 
 
