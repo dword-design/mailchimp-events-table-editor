@@ -29,7 +29,7 @@
     "@dword-design/vue-icon": "^2.0.0",
     "@fontsource/open-sans": "^4.2.1",
     "@fontsource/source-code-pro": "^4.2.1",
-    "@fortawesome/fontawesome-free": "^5.14.0",
+    "@fortawesome/fontawesome-free": "^6.0.0",
     "depcheck-package-name": "^2.0.0",
     "nuxt-push-plugins": "^2.0.0",
     "prismjs": "^1.20.0",
